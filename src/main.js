@@ -12,8 +12,8 @@ function createWindow() {
         },
     });
 
+    // mainWindow.loadFile('main_screen/index.html');
     mainWindow.loadFile('main_screen/index.html');
-
     mainWindow.on('closed', function () {
         mainWindow = null;
     });

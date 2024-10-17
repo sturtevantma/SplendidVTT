@@ -14,7 +14,11 @@ body {
 .left {
     width: fit-content;
     padding: 10px;
-    background-color: #d2d2d2;
+    background-color: #1796DD;
+}
+
+.left img {
+    width: 80px;
 }
 
 .right {
