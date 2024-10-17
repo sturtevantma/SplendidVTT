@@ -13,6 +13,6 @@
     "electron": "^33.0.0"
   },
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron src/main.js"
   }
 }
