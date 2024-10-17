@@ -22,7 +22,8 @@ function createWindow() {
 app.whenReady().then(createWindow);
 
 app.on('window-all-closed', function () {
-    if (process.platform !== 'darwin') app.quit();
+    // if (process.platform !== 'darwin') <===== Standard Apple Convention would keep the app running after all windows are closed
+    app.quit();
 });
 
 app.on('activate', function () {
