@@ -1,18 +1,16 @@
 {
   "name": "splendidvtt",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "author": "",
+  "author": "Matthew Sturtevat and Dean Geraci",
   "license": "ISC",
   "devDependencies": {
     "electron": "^33.0.0"
   },
   "scripts": {
-    "start": "electron src/main.js"
+    "start": "electron src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

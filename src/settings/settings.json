@@ -1,10 +1,14 @@
 {
     "battlemap": {
-        "bg-color": "#e3e3e3"
+        "bg-color": "#e3e3e3",
+        "grid-color": "#c3c3c3",
+        "grid-size": 1,
+        "grid-opacity": 1
 
     },
     "initiative_tracker": {
         "bg-color": "#d3d3d3"
+
     },
     "other": {
 
