@@ -1,7 +1,8 @@
 body {
-    margin: 0;
+    margin: 5px;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 .container {
@@ -15,10 +16,18 @@ body {
     width: fit-content;
     padding: 10px;
     background-color: #1796DD;
+    overflow: hidden;
 }
 
 .left img {
     width: 80px;
+}
+
+.scrollable-div {
+    overflow: hidden;
+    overflow-y: scroll;
+    
+    height: calc(100vh - 120px) !important;
 }
 
 .right {
@@ -26,3 +35,18 @@ body {
     background-color: #e3e3e3;
 }
 
+.grid-container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 100%;
+}
+
+.token {
+    display: flex;
+    flex-direction: column;
+}
+.token_stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

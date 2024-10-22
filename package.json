@@ -1,7 +1,7 @@
 {
   "name": "splendidvtt",
   "version": "0.0.1",
-  "description": "",
+  "description": "A Virtual Tabletop for the modern world.",
   "main": "index.js",
   "keywords": [],
   "author": "Matthew Sturtevat and Dean Geraci",
