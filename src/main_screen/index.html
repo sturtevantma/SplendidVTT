@@ -5,6 +5,7 @@
 <head>
     <title>Splendid</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="battlemap.js"></script>
 </head>
 
 <body>
@@ -115,12 +116,17 @@
                     </div>
                 </div>
             </div>
+            <div class="controls">
+                <img src="../assets/add_player_button.png" alt="Add player button" width="100%" draggable="false">
+            </div>
         </div>
 
 
 
         <div class="right">
-            <iframe src="../battlemap/i_battlemap.html" height="100%" width="100%"></iframe>
+            <div class="battlemap">
+                <img id="zoomable-image" src="../assets/Battlemap.webp" alt="Battlemap Image" draggable="false">
+            </div>
         </div>
 
     </div>

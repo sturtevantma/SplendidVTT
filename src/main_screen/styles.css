@@ -32,7 +32,9 @@ body {
 
 .right {
     flex-grow: 1;
+    overflow: hidden !important;
     background-color: #e3e3e3;
+    width: 10%;
 }
 
 .grid-container {
@@ -49,4 +51,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.battlemap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+    cursor: grab;
+}
+
+.battlemap:active {
+    cursor: grabbing;
 }
