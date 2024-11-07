@@ -32,6 +32,7 @@ body {
 
 .right {
     flex-grow: 1;
+    position: relative;
     overflow: hidden !important;
     background-color: #e3e3e3;
     width: 10%;
@@ -59,8 +60,25 @@ body {
     left: 0;
     transform-origin: 0 0;
     cursor: grab;
+    z-index: 0;
 }
 
 .battlemap:active {
     cursor: grabbing;
+}
+
+.grid {
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    transform: translate(0, 0);
+    gap: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.grid > div {
+    border: 4px solid #00eaff; /* Add border to each grid space */
 }

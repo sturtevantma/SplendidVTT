@@ -1,17 +1,16 @@
-var battlemap, zoomableImage;
+var battlemap;
+var panX = 0;
+var panY = 0;
+var scale = 1;
 
 window.onload = function() {
     battlemap = document.querySelector('.battlemap');
-    zoomableImage = document.getElementById('zoomable-image');
     console.log('battlemap');
     if (!battlemap) {
         console.error('Element with class "battlemap" not found.');
         return;
     }
 
-    let scale = 1;
-    let panX = 0;
-    let panY = 0;
     let isPanning = false;
     let startX, startY;
     let zoomMin = 0.1;
@@ -47,3 +46,15 @@ window.onload = function() {
         battlemap.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
     }
 };
+
+function updateGridSize(rows, columns) {
+    const grid = document.querySelector('.grid');
+    grid.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+    grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+    grid.innerHTML = '';
+    // add in the divs into the html
+    let gridDiv = '<div class="grid-item"></div>';
+    for (let i = 0; i < columns * rows; i++) {
+        grid.innerHTML += gridDiv;
+    }
+}
